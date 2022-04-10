@@ -1,0 +1,132 @@
+body {
+  background-color: aquamarine;
+}
+.left-section {
+  background-color: black;
+  grid-column: span 1;
+  color: white;
+}
+section {
+  display: block;
+}
+
+.right-section {
+  background-color: azure;
+  grid-column: span 1 / span 2;
+}
+@media screen and (min-width: 674px) {
+  .main-content {
+    display: grid;
+    grid-template-columns: 300px 700px;
+    min-height: 1000px;
+    width: 90%;
+    margin: 20px auto;
+  }
+} /*
+@media screen and (max-width: 674px) {
+  .left-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}*/
+@media screen and (max-width: 674px) {
+  .main-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.left-content {
+  padding: 1rem;
+}
+.profile-image {
+  border: 5px solid white;
+  border-radius: 30%;
+  width: 60%;
+  margin: auto;
+  display: block;
+  margin: 0 auto;
+}
+.name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 0.8rem;
+  letter-spacing: 0.02;
+}
+.designation {
+  font-size: 1rem;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+.description {
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 1rem;
+}
+/*h2 {
+  text-align: center;
+}*/
+.skills-title {
+  text-align: center;
+  font-size: 0.75rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+}
+.skill-name {
+  font-size: 0.65rem;
+  font-weight: 0.65rem;
+  text-align: left;
+  padding-bottom: 00.5rem;
+}
+.progress-bar {
+  border: 1px solid white;
+  height: 4px;
+  background-color: white;
+}
+.social-media {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-github {
+  background: white;
+  color: black;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-envelope {
+  background: white;
+}
+.fa {
+  padding: 10px;
+  font-size: 2rem;
+  width: 1rem;
+  text-align: center;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.personal-details {
+  margin: 5px;
+  padding: 10px;
+}
+
+/* Right section*/
+.right-main-content {
+  padding: 2rem 3rem 2rem 3rem;
+}
+.right-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  letter-spacing: 1px;
+}
